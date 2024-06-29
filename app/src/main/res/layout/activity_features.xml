@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FeaturesActivity">
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/flow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:orientation="horizontal"
+        app:constraint_referenced_ids="Recycler,fragments,nav,customviews,lifecycle,fragments2,sploading,firestoreenter,fcmnotify,btnidk"
+        app:flow_horizontalGap="30dp"
+        app:flow_maxElementsWrap="2"
+        app:flow_verticalGap="26dp"
+        app:flow_wrapMode="aligned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Recycler"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:padding="15dp"
+        android:text="Recycler View"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fragments"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:padding="15dp"
+        android:text="Fragments"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nav"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:padding="15dp"
+        android:text="Bottom Nav"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="213dp"
+        tools:layout_editor_absoluteY="64dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/customviews"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:padding="15dp"
+        android:text="Custom view"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="202dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/lifecycle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:padding="15dp"
+        android:text="Life Cycle"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="191dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fragments2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:padding="15dp"
+        android:text="Fragment Nav"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sploading"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:padding="15dp"
+        android:text="SPloading"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="291dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/firestoreenter"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:padding="15dp"
+        android:text="Firestore"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="394dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/coolback"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Features"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:textSize="40sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fcmnotify"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:padding="15dp"
+        android:text="FCMnotification"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="519dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnidk"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:padding="15dp"
+        android:text="Button"
+        android:textColor="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

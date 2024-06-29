@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirestoreActivity">
+
+    <EditText
+        android:id="@+id/fillname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:hint="Name"
+        android:textColorHint="#80F44336"
+        android:textColor="#E91E63"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fillpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Password"
+        android:textColorHint="#80F44336"
+        android:textColor="#E91E63"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/fillname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fillname"
+        app:layout_constraintTop_toBottomOf="@+id/fillname" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/adddatabtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/buttonback"
+        android:text="Add Data"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/fillpass"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/fillpass"
+        app:layout_constraintTop_toBottomOf="@+id/fillpass" />
+</androidx.constraintlayout.widget.ConstraintLayout>
