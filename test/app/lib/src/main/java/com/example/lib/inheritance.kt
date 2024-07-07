@@ -12,7 +12,7 @@ open class Papa {     //super parent base
 
 //multilevel
 open class Beta : Papa(){   // sub child
-    open protected var b = "papa" //can be used by sub
+    protected open var b = "papa" //can be used by sub
     fun kon(){
         println("sare $a ka papa")
     }
@@ -34,8 +34,7 @@ class Toy2 : Beta(){
     override var a = "abc"
     fun kon2(){
         println("$c beta and $b" )
-        println(super.prop())
-
+        super.prop()
     }
 }
 
